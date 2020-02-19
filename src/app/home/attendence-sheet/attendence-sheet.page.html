@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Attendence Sheet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment value="emp" style="padding-right: 5pt; padding-left: 5pt; padding-top: 5pt;" >
+    <ion-segment-button value = "emp">
+      <ion-label class = "segment-btn" >Employee</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value = "intern">
+      <ion-label class = "segment-btn">Intern</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-grid fixed style="margin-top: 10pt;" >
+    <ion-row class="table-header" href = "#">
+      <ion-col size="6" style=" padding-left: 30pt;">
+        <ion-label>Name</ion-label> 
+      </ion-col>
+      <ion-col size="3">
+        <ion-label >TimeIn</ion-label> 
+      </ion-col>    
+      <ion-col size="3">
+        <ion-label >Place</ion-label> 
+      </ion-col>
+    </ion-row>
+    <ion-row class="table-data">
+      <ion-col size="6">
+        <ion-label >Prashant Patidar</ion-label> 
+      </ion-col>
+      <ion-col size="3">
+        <ion-label >10:00AM</ion-label> 
+      </ion-col>    
+      <ion-col size="3">
+        <ion-label >Dewas</ion-label> 
+      </ion-col>
+    </ion-row>
+    <ion-row class="table-data">
+      <ion-col size="6">
+        <ion-label >Swarnim Mukati</ion-label> 
+      </ion-col>
+      <ion-col size="3">
+        <ion-label >10:30AM</ion-label> 
+      </ion-col>    
+      <ion-col size="3">
+        <ion-label >Indore</ion-label> 
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

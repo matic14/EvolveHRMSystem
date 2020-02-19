@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>All Employee</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar color="light"></ion-searchbar>
+
+    <ion-grid fixed>
+      <ion-row class = "table-header">
+        <ion-col size="3">
+          <ion-label>ID</ion-label>
+        </ion-col>
+        <ion-col size="5">
+          <ion-label>Name</ion-label>
+        </ion-col>
+        <ion-col size="4">
+          <ion-label>Dept</ion-label>
+        </ion-col>
+      </ion-row>
+        <ion-row class = "table-data" routerLink = "/total-emp/emp-details">
+          <ion-col size="3">
+            <ion-label>IT001</ion-label>
+          </ion-col>
+          <ion-col size="5">
+            <ion-label >Prashant Patidar</ion-label>
+          </ion-col>
+          <ion-col size="4">
+            <ion-label>IT</ion-label>
+          </ion-col>
+        </ion-row>
+      <ion-row class = "table-data">
+        <ion-col size="3">
+          <ion-label>TS002</ion-label>
+        </ion-col>
+        <ion-col size="5">
+          <ion-label>Swarnim Mukati</ion-label>
+        </ion-col>
+        <ion-col size="4">
+          <ion-label>TS</ion-label>
+        </ion-col>
+      </ion-row>
+        <ion-row class = "table-data">
+          <ion-col size="3">
+            <ion-label>MR003</ion-label>
+          </ion-col>
+          <ion-col size="5">
+            <ion-label>Shreyansh</ion-label>
+          </ion-col>
+          <ion-col size="4">
+            <ion-label>Marketing</ion-label>
+          </ion-col>
+        </ion-row>
+        <ion-row class = "table-data">
+          <ion-col size="3">
+            <ion-label>IT004</ion-label>
+          </ion-col>
+          <ion-col size="5">
+            <ion-label>Shantanu Palecha</ion-label>
+           </ion-col>
+          <ion-col size="4">
+            <ion-label>IT</ion-label>
+          </ion-col>
+        </ion-row>
+  </ion-grid>
+</ion-content>

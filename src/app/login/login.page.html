@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row style="height: 250pt;">
+      <ion-col>  
+        <img [src]="photo" >
+      </ion-col>
+    </ion-row>
+    <ion-row style="height: 150pt;">
+      <ion-col size="4">
+      </ion-col>
+      <ion-col size="4" offset="1">
+        <ion-fab >
+          <ion-fab-button (click)="takePicture()">
+            <ion-icon name="camera"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+      </ion-col>
+      <ion-col size="4">     
+      </ion-col>
+    </ion-row>
+    <ion-row >
+      <ion-col offset = "4">
+        <ion-button type="submit" [routerLink]="['/home']" routerLinkActive="router-link-active"   shape="round">
+          Submit
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

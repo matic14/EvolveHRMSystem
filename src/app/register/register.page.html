@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button menu="m1"></ion-menu-button>
+      </ion-buttons>
+    <ion-title><b>Register</b></ion-title>
+    <ion-buttons slot="end" [routerLink]="['/home']" routerLinkActive="router-link-active" >
+      <ion-icon slot="icon-only" name="add"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content no-padding>
+  <form #registerForm="ngForm" (ngSubmit) = "onSubmit(registerForm)" >
+  <ion-grid>
+    <ion-row class="form-group">
+      <ion-col>
+        <ion-item >
+          <ion-label position = "floating">Name : </ion-label>
+          <ion-input type = "text" class="form-control"
+             name = "emp_name" [(ngModel)]="emp_name"></ion-input>
+
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="form-group">
+      <ion-col >
+        <ion-item>
+          <ion-label position = "floating">Mobile : </ion-label>
+          <ion-input type = "number" class="form-control"
+            name = "emp_mobile" [(ngModel)]="emp_mobile"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="form-group">
+      <ion-col >
+        <ion-item>
+          <ion-label position = "floating">Email : </ion-label>
+          <ion-input type = "email" class="form-control"
+          name = "emp_email" [(ngModel)]="emp_email"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col >
+        <ion-item>
+          <ion-label>Gender : </ion-label>
+          <ion-select interface="popover">
+            <ion-select-option value="male">Male</ion-select-option>
+            <ion-select-option value="female">Female</ion-select-option>
+            <ion-select-option value="other">Others</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col >
+        <ion-item>
+          <ion-label position = "floating">Address : </ion-label>
+          <ion-input type = "text"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col >
+        <ion-item>
+          <ion-label>Type : </ion-label>
+          <ion-select interface="popover">
+            <ion-select-option value="Emp">Employee</ion-select-option>
+            <ion-select-option value="Intern">Intern</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col >
+        <ion-item>
+          <ion-label>Department : </ion-label>
+          <ion-select interface="popover">
+            <ion-select-option value="Emp">Development</ion-select-option>
+            <ion-select-option value="Intern">Technical Support</ion-select-option>
+            <ion-select-option value="Intern">Marketing</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row> 
+    <ion-row class="form-group">
+      <ion-col size="12">
+        <ion-button type = "submit">
+          Click me
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</form>
+
+  <img [src]="photo" >
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="takePicture()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+</ion-content>

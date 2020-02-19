@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="m1"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>EmployeeList</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment value="dev" style="padding-right: 5pt; padding-left: 5pt; padding-top: 5pt; padding-bottom: 3pt;" >
+    <ion-segment-button value = "dev">
+      <ion-label class = "segment-btn" >IT</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value = "ts">
+      <ion-label class = "segment-btn">Technical Support</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value = "mark">
+      <ion-label class = "segment-btn">Marketing</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-searchbar color="light"></ion-searchbar>
+
+
+
+<ion-list>
+  <ion-item routerLink = "/emp-monthly-att">
+    <ion-label>Prashant Patidar</ion-label>
+  </ion-item>
+  <ion-item button>
+    <ion-label>Swarnim Mukati</ion-label>
+  </ion-item>
+  <ion-item button>
+    <ion-label>Piyush Chandak</ion-label>
+  </ion-item>
+</ion-list>
+
+</ion-content>
